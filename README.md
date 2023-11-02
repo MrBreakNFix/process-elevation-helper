@@ -34,13 +34,17 @@ Before using Process Elevation Helper, make sure you have the following prerequi
 
 ## Installation
 
-1. Download the release of elev.exe
+1. Download the release of `elev.exe`
 
-2. Create a folder called "elev" and put elev.exe in it
+2. Create a folder called `elev` and put `elev.exe` in it
 
-3. Add a system envorenmental variable under PATH, so that you can access it under the run menu.
+3. Add a system environment variable under `PATH`, so that you can access it under the run menu. Run under a system/admin command prompt to do this, or do it in environmental veriable settings.
+`setx PATH "%PATH%;C:\Users\your-name\elevsw\elevhelper" /m`
 
 ## Usage
 
-elev.exe ProgramPath, example: "elev cmd" creates the CMD window under the other user.
+elev.exe ProgramPath, example: `elev cmd` creates the CMD window under the other user.
+
+![Using the tool](https://i.imgur.com/gDCqNVT.png) 
+
 This tool is different because it works with programs that runas does not support
