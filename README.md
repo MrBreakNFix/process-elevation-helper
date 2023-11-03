@@ -22,7 +22,7 @@ In various scenarios, you might need to execute specific commands or operations 
 
 - **UAC Prompt Bypass:** Process Elevation Helper allows you to bypass UAC prompts, providing a smoother experience when running commands with elevated privileges.
 
-- **Secure Communication:** It communicates with the Process Elevation utility using a NamedPipeClientStream, ensuring secure and controlled command execution.
+- **Auto Start:** It communicates with the [Process Elevation](https://github.com/MrBreakNFix/process-elevation), which starts when the computer does.
 
 ## Prerequisites
 
@@ -39,11 +39,11 @@ Before using Process Elevation Helper, make sure you have the following prerequi
 2. Create a folder called `elev` and put `elev.exe` in it
 
 3. Add a system environment variable under `PATH`, so that you can access it under the run menu. Run under a system/admin command prompt to do this, or do it in environmental veriable settings.
-`setx PATH "%PATH%;C:\Users\your-name\elevsw\elevhelper" /m`
+`setx PATH "%PATH%;C:\Users\your-name\elevsw\elevhelper" /m` (TODO: do this automatically.)
 
 ## Usage
 
-elev.exe ProgramPath, example: `elev cmd` creates the CMD window under the other user.
+elev.exe ProgramPath, for example: `elev cmd` creates the CMD window under the other user.
 
 ![Using the tool](https://i.imgur.com/gDCqNVT.png) 
 
